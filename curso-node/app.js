@@ -8,11 +8,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/formulario_inclusao_noticia', function(req, res) {
-    res.send("admin/form_add_noticia")
+    res.render("admin/form_add_noticia")
 });
 
 app.get('/noticias', function(req, res) {
-    res.send("noticias/noticias")
+    res.render("noticias/noticias")
 });
 
 app.listen(3000, function() {
